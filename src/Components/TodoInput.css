@@ -1,0 +1,28 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-box-todo {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size: 14px;
+}
+
+.add-btn {
+  padding: 8px 14px;
+  border-radius: 50%;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-btn:active {
+  box-shadow: none;
+}

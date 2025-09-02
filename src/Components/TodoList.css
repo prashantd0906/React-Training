@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #444;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid #555;
+  font-size: 14px;
+}
+
+th {
+  background-color: rgb(188, 187, 112);
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+tr:hover {
+  background-color: #555;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(158, 198, 212);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #555;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container {
+  height: 500px;
+  width: 350px;
+}
+
+.app-heading {
+  padding: 4px;
+  color: black;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+}
