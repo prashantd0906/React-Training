@@ -71,7 +71,6 @@ const Navbar: React.FC = () => {
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
           sx={{width: 200}}
-          role="presentation"
           onClick={toggleDrawer(false)}
         >
           <List>
@@ -81,7 +80,6 @@ const Navbar: React.FC = () => {
                   component="a"
                   href={linkItem.link}
                   onClick={toggleDrawer(false)}
-                  aria-label={`Navigate to ${linkItem.text}`}
                 >
                   <ListItemText primary={linkItem.text} />
                 </ListItemButton>
