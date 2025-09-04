@@ -1,5 +1,0 @@
-module.exports = {
-  semi: true,
-  bracketSpacing: false,
-  printWidth: 80,
-};
