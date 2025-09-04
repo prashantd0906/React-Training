@@ -1,47 +1,47 @@
-import React from 'react';
-import products from '../../assets/Coffee';
-import type {Product} from '../../assets/Coffee';
 import {
+  Box,
+  Button,
   Card,
   CardContent,
   CardMedia,
-  Button,
   Typography,
-  Box,
-} from '@mui/material';
+} from "@mui/material";
+import React from "react";
+import type {Product} from "../../assets/Coffee";
+import products from "../../assets/Coffee";
 
 const Coffee: React.FC = () => {
   return (
-    <Box sx={{my: '5rem'}} id="coffee">
-      <Typography variant="h5" sx={{textAlign: 'center', mb: 4}}>
+    <Box sx={{my: "5rem"}} id="coffee">
+      <Typography variant="h5" sx={{textAlign: "center", mb: 4}}>
         Featured Coffee
       </Typography>
 
       <Box
         sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
+          display: "flex",
+          flexWrap: "wrap",
           gap: 3,
-          justifyContent: 'center',
+          justifyContent: "center",
         }}
       >
         {products.map((product: Product) => (
           <Box
             key={product.id}
             sx={{
-              width: {xs: '100%', sm: '45%', md: '30%'},
+              width: {xs: "100%", sm: "45%", md: "30%"},
               maxWidth: 345,
-              display: 'flex',
-              justifyContent: 'center',
+              display: "flex",
+              justifyContent: "center",
             }}
           >
-            <Card sx={{textAlign: 'center', p: 2, width: '100%'}}>
+            <Card sx={{textAlign: "center", p: 2, width: "100%"}}>
               <CardMedia
                 component="img"
                 height="140"
                 image={product.image}
                 alt={product.name}
-                sx={{objectFit: 'cover'}}
+                sx={{objectFit: "cover"}}
               />
               <CardContent>
                 <Typography variant="h6" gutterBottom>
